@@ -1,0 +1,341 @@
+/* start root pane design */
+BorderPane.rootPane{
+	-fx-border-color: #eeeeec;
+}
+
+#rootPane .tab-header-background{
+	-fx-background-color: #555753;	
+}
+/* end root pane design */
+
+/*
+	start design tableTab
+*/
+Label.tableAuthorInfo {
+	-fx-padding: 5;
+	-fx-text-fill: #003e33;
+}
+BorderPane.tableOuterPane {
+	-fx-background-color: linear-gradient(to bottom, #ffa500, #9E5A00);	
+	-fx-pref-width: 350;
+	-fx-alignment: center;
+	-fx-spacing: 30;
+}
+
+#tablesTabsTab {
+	-fx-background-color: transparent;
+	-fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+   	-fx-padding: 5 0 0 0;
+  /*  	-fx-border-inset: 1; */
+ 	-fx-border-color: transparent;
+	-fx-cursor: open-hand;
+}
+
+Label.tablesTabLabel{
+	-fx-background-color: #cbffef;
+	/* -fx-border-radius: 10 10 0 0; */
+	-fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+   	-fx-padding: 5 10 10 10;
+ 	-fx-border-color: transparent;
+ 	-fx-text-fill: #555753;
+	/* -fx-border-inset: 0; */
+	-fx-cursor: open-hand;
+	-fx-font-size: 18;
+}
+
+#tablesTabPane .tab-header-background{
+	-fx-background-color: #cbffef;	
+}
+
+/*
+	end design tableTab
+*/
+
+/* start disabled */
+#loginTab:disabled,
+#loginTab:disabled .loginTabLabel,
+#databasesTab:disabled,
+#databasesTab:disabled .databasesTabLabel,
+#tablesTabsTab:disabled ,
+#tablesTabsTab:disabled .tablesTabLabel{
+	-fx-cursor: default;
+}
+/* Label.loginTabLabel.notActive{
+	-fx-text-fill: white;
+}
+Label.databasesTabLabel.notActive {
+	-fx-text-fill: white;
+} */
+/* end disabled */
+
+
+/* start root pane design */
+/* StackPane.tab-header-background {
+	-fx-background-color: #555753;
+	-fx-padding:30;
+} */
+/* end root pane design */
+
+/* start login pane design */
+#loginTab {
+	-fx-background-color: transparent;
+	/* -fx-border-radius: 10 10 0 0; */
+	-fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+   	-fx-padding: 5 0 0 0;
+ 	-fx-border-color: transparent;
+	-fx-cursor: open-hand;
+}
+
+Label.loginTabLabel {
+	-fx-background-color: #00cc00;
+/* 	-fx-border-radius: 10 10 0 0; */
+	-fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+   	-fx-padding: 5 10 10 10;
+ 	-fx-border-color: transparent;
+	-fx-cursor: open-hand;
+	-fx-font-size: 18;
+/* 	-fx-font-weight:bold; */
+} 
+
+VBox.loginOuterPane {
+   	-fx-background-color: linear-gradient(to bottom, #00cc00, #005500);
+	-fx-pref-width: 350;
+	-fx-alignment: center;
+	-fx-spacing: 30;
+}
+
+GridPane.loginInnerPane {
+	-fx-pref-width: 350;
+	-fx-alignment: center;
+	-fx-hgap: 5;
+	-fx-vgap: 5;
+}
+
+Label.infoLabel {
+	-fx-pref-width: inherit;
+	-fx-pref-height: 100;
+	-fx-font-family: Verdana;
+	-fx-font-size: 18;
+	-fx-padding: 2 5 2 5;
+	-fx-text-alignment: justify;
+	-fx-wrap-text: true;
+	-fx-content-display:top;
+	-fx-text-fill: white;
+	-fx-border-insets: 1;
+	-fx-border-color: #ddffdf;
+ 	/* -fx-border-radius: 5; */
+ 	-fx-border-style: solid; 
+}
+
+Label.usernameLabel,
+Label.passwordLabel {
+	-fx-font-family: FreeMono;
+	-fx-font-size: 25;
+	-fx-text-fill: #ddffdf;
+}
+
+TextField.usernameTextField,
+PasswordField.passwordPasswordField {
+	-fx-font-family: FreeMono;
+	-fx-font-size: 20;
+	-fx-pref-width: 200;
+	-fx-pref-height: 30;
+	-fx-focus-color: -fx-control-inner-background;
+    -fx-faint-focus-color: -fx-control-inner-background;
+}
+
+TextField.usernameTextField:focused,
+PasswordField.passwordPasswordField:focused {
+	-fx-focus-color:#0a7824;
+    -fx-faint-focus-color: transparent;
+}
+
+Button.loginSubmitButton {
+	-fx-pref-width: 100;
+	-fx-pref-height: 50;
+	-fx-font-family: FreeMono;
+	-fx-font-size: 20;
+	-fx-font-weight: bold;
+	-fx-padding: 2 5 2 5;
+	-fx-text-fill: white;
+	-fx-background-color: #11a428;
+	-fx-cursor: open-hand;
+}
+
+Button.loginSubmitButton:hover {
+	-fx-background-color: #00cc00;
+}
+
+Button.loginSubmitButton:focused {
+	-fx-background-color: #00cc00;
+}
+
+Label.loginAuthorInfo {
+	-fx-padding: 0 5;
+	-fx-text-fill: #ffa500;
+}
+/* end login pane design */
+
+/* start databases pane design */
+.databases {
+	-fx-padding: 5 0 0 0 ;
+	-fx-border-color: transparent;
+}
+
+#databasesTab {
+	-fx-background-color: transparent;
+	-fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+   	-fx-padding: 5 0 0 0;
+	-fx-cursor: open-hand;
+ /* 	-fx-border-radius:0; */
+ 	-fx-border-color: transparent;
+}
+
+
+Label.databaseAuthorInfo {
+	-fx-padding: 5;
+	-fx-text-fill: #003e33;
+}
+
+Label.databasesTabLabel {
+	-fx-background-color: #0ee0b8;
+   	-fx-padding: 5 10 10 10;
+ 	-fx-border-inset: 0;
+ 	-fx-border-color: transparent;
+ 	-fx-border-radius: 0;
+	-fx-cursor: open-hand;
+	-fx-font-size: 18;
+}
+
+BorderPane.databasesOuterPane {
+/* 	-fx-background-color: linear-gradient(to bottom, #ffa500, #9E5A00);	
+ */	-fx-pref-width: 350;
+ 	-fx-background-color: #0ee0b8;
+	-fx-alignment: center;
+	-fx-spacing: 30;
+}
+
+ScrollPane.databasesInnerPane {
+   	-fx-background-color: transparent;		
+ 	-fx-pref-width: 350;
+	-fx-alignment: center;
+	-fx-hgap: 5;
+	-fx-vgap: 5;
+}
+/* end databases pane design */
+
+/* start selected*/
+
+
+Label.tableTabLabel {
+	-fx-background-color:  transparent;
+ 	-fx-text-fill: #003e33;
+	-fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+   	-fx-padding: 5 10 10 10;
+	-fx-cursor: open-hand;
+	-fx-border-inset:0;
+}
+
+#tableTab {
+	-fx-background-color: #b6fbef;
+ 	-fx-text-fill:  #babdb6;
+	-fx-focus-color: transparent;
+    -fx-faint-focus-color:  transparent;
+   	-fx-padding: 0;
+   	-fx-border-color: #b6fbef;
+	-fx-cursor: open-hand;
+	-fx-border-inset:0;
+}
+
+
+
+
+#tableTab:selected {
+	-fx-background-color: #0ee0b8; 
+	-fx-text-fill: black;
+	-fx-padding: 5;
+	-fx-border-inset:0;
+}
+
+Tab#tablesTabsTab {
+	-fx-background-color: #0ee0b8;
+	-fx-border-inset: 0;
+	-fx-border-color: transparent;
+}
+
+.table .column-header-background .label{
+	-fx-background-color: #0ee0b8;
+	-fx-text-fill: #003e33;
+	-fx-font-weight: normal;
+	-fx-font-size:16;
+	-fx-padding:0;
+}
+
+.table .column-header-background .filler {
+	-fx-background-color: #0ee0b8;
+	-fx-border-color:transparent;
+	-fx-border-inset: 0 1 0 0;
+}
+
+.table .nested-column-header .column-header{
+	-fx-background-color: #0ee0b8;
+	-fx-border-color: transparent #003e33 transparent transparent;
+	-fx-border-inset: 0 1 0 0;
+	-fx-padding:0;
+}
+
+.databases {
+	-fx-border-color: transparent;
+    -fx-background-color: #0ee0b8;
+   	-fx-border-radius:0;
+	-fx-border-inset: 0;
+}
+
+
+.databases .column-header-background{
+	-fx-background-color: #0ee0b8;
+}
+
+Region.column-overlay{
+	-fx-border-color:#0ee0b8;
+	-fx-background-color: #0ee0b8;
+}
+
+.databases .column-header-background .label{
+	-fx-background-color: #0ee0b8;
+	-fx-text-fill: #003e33;
+	-fx-font-weight: normal;
+	-fx-font-size:16;
+	-fx-padding:0;
+	-fx-border-inset: 0 1 0 0;
+}
+
+.databases .column-header-background .filler {
+	-fx-background-color: #0ee0b8;
+	-fx-border-color:#0ee0b8;
+	-fx-border-inset: 0 1 0 0;
+}
+
+.databases .nested-column-header .column-header{
+	-fx-background-color: #0ee0b8;
+	-fx-border-color: transparent #003e33 transparent transparent;
+	-fx-border-inset: 0 1 0 0;
+	-fx-padding:0;
+}
+
+.table,
+.tableOuterPane,
+#tablesTabsTab,
+#tablesTabPane {
+	-fx-border-inset:0;
+	-fx-border-color:#cbffef;
+	-fx-background-color: #cbffef;
+}
+
+/* end selected*/
